@@ -7,7 +7,7 @@ const Tour = ({ tour, removeTour }) => {
     <article className="tour">
       <div className="img-container">
         <img src={img} alt="tour image" />
-        <span>
+        <span className="close-btn">
           <i className="fas fa-window-close" />
         </span>
       </div>
@@ -17,8 +17,9 @@ const Tour = ({ tour, removeTour }) => {
         <h4>{name}</h4>
         <h5>
           info{" "}
-          <span className="close-btn">
+          <span>
             <i class="fas fa-caret-square-down"></i>
+
           </span>
         </h5>
         <p>{info}</p>
